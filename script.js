@@ -1,6 +1,6 @@
 let button = document.getElementById("button");
 let board = document.querySelectorAll(".board");
-
+let number = 1;
 button.addEventListener('click',create)
 
 function create(){
@@ -9,8 +9,9 @@ function create(){
     div.append(input);
     div.setAttribute('draggable', true);
     div.setAttribute('class',"job");
-    div.setAttribute('id',"abc")
+    div.setAttribute('id',number)
     document.body.append(div)
+    number++;
     div.addEventListener('dragstart', function(evt){
         evt.dataTransfer.setData("text", evt.target.id);
         console.log(evt)
