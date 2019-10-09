@@ -35,7 +35,7 @@ div.board {
     font-size: 30px;
     width:20%;
     height: 100%;
-    border: 1px solid red;
+    border: 2px solid red;
     flex: left;
     margin: 1px;
 }
