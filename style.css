@@ -22,7 +22,6 @@ div input {
 #container {
     width: 800px;
     height: 600px;
-    border: 1px solid green;
     float: right;
     position: relative;
     top: 200px;
@@ -34,7 +33,7 @@ div input {
 div.board {
     text-align: center;
     font-size: 30px;
-    width:25%;
+    width:20%;
     height: 100%;
     border: 1px solid red;
     flex: left;
