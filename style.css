@@ -37,5 +37,6 @@ div.board {
     height: 100%;
     border: 1px solid red;
     flex: left;
+    margin: 1px;
 }
 
