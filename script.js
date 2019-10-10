@@ -2,6 +2,8 @@ let button = document.getElementById("button");
 let board = document.querySelectorAll(".board");
 let number = 1;
 button.addEventListener('click',create)
+let arrCon1 =[];
+
 
 function create(){
     let input = document.createElement("input")
@@ -31,9 +33,13 @@ function dragOver(e){
 }
 
 function dragDrop(evt){
+
+    if(evt.target.className =='board'){    
     evt.preventDefault();
     let data = evt.dataTransfer.getData("text");
     console.log(evt.dataTransfer.getData("text"))
     console.log("dropped")
     evt.target.appendChild(document.getElementById(data));
+    
+}
 }
